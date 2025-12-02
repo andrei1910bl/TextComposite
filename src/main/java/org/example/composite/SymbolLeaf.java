@@ -1,5 +1,7 @@
 package org.example.composite;
 
+import org.example.exception.CustomException;
+
 public class SymbolLeaf implements TextComponent {
   private char symbol;
   private TextType type;
@@ -14,7 +16,17 @@ public class SymbolLeaf implements TextComponent {
   }
 
   @Override
-  public String show() {
+  public void add(TextComponent component) {
+//    throw new CustomException("Cannot add leaf");
+  }
+
+  @Override
+  public void remove(TextComponent component) {
+//    throw new CustomException("Cannot remove from leaf");
+  }
+
+  @Override
+  public String toString() {
     return Character.toString(symbol);
   }
 
