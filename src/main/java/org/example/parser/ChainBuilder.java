@@ -10,6 +10,6 @@ public class ChainBuilder {
     textToParagraph.setNextParser(paragraphToSentence);
     paragraphToSentence.setNextParser(sentenceToLexeme);
     sentenceToLexeme.setNextParser(lexemeToWordSymbol);
-    return sentenceToLexeme;
+    return textToParagraph;
   }
 }

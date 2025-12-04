@@ -16,13 +16,16 @@ public class SymbolLeaf implements TextComponent {
   }
 
   @Override
+  public TextType getType() {
+    return type;
+  }
+
+  @Override
   public void add(TextComponent component) {
-//    throw new CustomException("Cannot add leaf");
   }
 
   @Override
   public void remove(TextComponent component) {
-//    throw new CustomException("Cannot remove from leaf");
   }
 
   @Override

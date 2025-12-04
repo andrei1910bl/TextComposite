@@ -32,8 +32,6 @@ public class LexemeToWordSymbolParser extends AbstractTextParser {
 
       TextComponent subComposite = new TextComposite(componentType);
 
-//      log.info("Symbol {}", componentString.toCharArray()[0]);
-
       for (char symbol : componentString.toCharArray()) {
         subComposite.add(new SymbolLeaf(symbol, TextType.SYMBOL));
         log.info("Symbols was added");

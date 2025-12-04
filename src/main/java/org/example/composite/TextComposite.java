@@ -13,6 +13,15 @@ public class TextComposite implements TextComponent{
   }
 
   @Override
+  public TextType getType() {
+    return type;
+  }
+
+  public List<TextComponent> getComponents() {
+    return components;
+  }
+
+  @Override
   public void add(TextComponent component) {
     components.add(component);
   }

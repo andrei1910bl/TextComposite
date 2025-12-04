@@ -1,8 +1,8 @@
 package org.example.composite;
 
-import org.example.exception.CustomException;
 
 public interface TextComponent {
+  TextType getType();
   void add(TextComponent component);
   void remove(TextComponent component);
   String toString();

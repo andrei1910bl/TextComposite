@@ -14,7 +14,7 @@ public class SentenceToLexemeParser extends AbstractTextParser{
     TextComponent sentenceComposite = new TextComposite(TextType.SENTENCE);
 
     String[] lexemes = sentenceString.strip().split(TextRegex.LEXEME_DELIMITER_REGEX);
-    log.info("The lexemes were separated : {}", lexemes[6]);
+    log.info("The lexemes were separated");
 
     for(String lexeme : lexemes){
       if(nextParser != null){
